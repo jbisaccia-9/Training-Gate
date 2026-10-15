@@ -1,0 +1,77 @@
+{
+  "_comment": "Entirely synthetic data. No real people, organizations, or records.",
+  "people": [
+    {"member_id": "TM-A", "name": "Team Member A", "email": "member.a@example.com", "chat_handle": "@member.a"},
+    {"member_id": "TM-B", "name": "Team Member B", "email": "member.b@example.com", "chat_handle": "@member.b"},
+    {"member_id": "TM-C", "name": "Team Member C", "email": "member.c@example.com", "chat_handle": "@member.c"},
+    {"member_id": "TM-D", "name": "Team Member D", "email": "member.d@example.com", "chat_handle": "@member.d"},
+    {"member_id": "TM-E", "name": "Team Member E", "email": "member.e@example.com", "chat_handle": "@member.e"},
+    {"member_id": "SUP-1", "name": "Supervisor One", "email": "supervisor.one@example.com", "chat_handle": "@supervisor.one"}
+  ],
+  "cases": [
+    {"case_id": "CASE-1001", "display_name": "Case Alpha", "training_expires_on": "2026-03-20", "last_trained_on": "2025-03-15"},
+    {"case_id": "CASE-1002", "display_name": "Case Bravo", "training_expires_on": "2026-09-01", "last_trained_on": "2025-09-01"},
+    {"case_id": "CASE-1003", "display_name": "Case Charlie", "training_expires_on": "2026-03-10", "last_trained_on": "2025-03-05"}
+  ],
+  "teams": {
+    "CASE-1001": ["TM-A", "TM-B"],
+    "CASE-1002": ["TM-C"],
+    "CASE-1003": ["TM-E"]
+  },
+  "supervisors": {
+    "CASE-1001": "SUP-1",
+    "CASE-1002": "SUP-1",
+    "CASE-1003": "SUP-1"
+  },
+  "plans": [
+    {
+      "case_id": "CASE-1001",
+      "document_id": "DOC-1001",
+      "version": "3",
+      "title": "Individual Service Plan",
+      "published_on": "2026-02-25",
+      "sections": [
+        {"heading": "Goals", "bullets": [
+          "Goal 1: placeholder statement describing a measurable outcome.",
+          "Goal 2: placeholder statement describing a second outcome.",
+          "Progress is reviewed at each scheduled check-in."
+        ]},
+        {"heading": "Support strategies", "bullets": [
+          "Use the agreed communication approach in every session.",
+          "Follow the documented routine and note any deviations.",
+          "Coordinate schedule changes through the case coordinator role."
+        ]},
+        {"heading": "Escalation and safety protocol", "bullets": [
+          "Know the early warning signs listed in the source document.",
+          "Follow the step-by-step escalation path in order.",
+          "Document every escalation within the required timeframe."
+        ]},
+        {"heading": "Team recommendations", "bullets": [
+          "Recommendation from the coordinating role: placeholder text.",
+          "Recommendation from the referring role: placeholder text."
+        ]}
+      ]
+    },
+    {
+      "case_id": "CASE-1002",
+      "document_id": "DOC-1002",
+      "version": "1",
+      "title": "Individual Service Plan",
+      "published_on": "2025-08-28",
+      "sections": [
+        {"heading": "Goals", "bullets": ["Goal 1: placeholder statement."]},
+        {"heading": "Escalation and safety protocol", "bullets": ["Follow the documented escalation path."]}
+      ]
+    },
+    {
+      "case_id": "CASE-1003",
+      "document_id": "DOC-1003",
+      "version": "2",
+      "title": "Individual Service Plan",
+      "published_on": "2025-03-01",
+      "sections": [
+        {"heading": "Goals", "bullets": ["Goal 1: placeholder statement."]}
+      ]
+    }
+  ]
+}

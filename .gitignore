@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+
+# Runtime output — never commit generated decks, attestations, or state
+.training-gate/
+out/
+
+# Local-only list of private terms (company, client, system names) for the PII scan
+.pii-denylist

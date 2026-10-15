@@ -1,0 +1,23 @@
+# Copy to config.toml and point `wiring` at a function that returns your adapters.
+# Never commit real credentials. Read secrets from environment variables inside
+# your wiring function instead.
+
+[gate]
+renewal_window_days = 30        # look for a new document when training expires within N days
+reminder_after_days = 7         # send a chat reminder if no acknowledgment after N days
+acknowledgement_keyword = "reviewed"
+baseline_on_first_run = true    # first run records current teams without emailing everyone
+state_path = ".training-gate/state.json"
+
+[brand]
+org_name = "Example Organization"
+primary_color = "#1F4E79"
+accent_color = "#F2A900"
+footer_text = "Internal training material. Do not forward."
+
+[adapters]
+wiring = "training_gate.adapters.fixture:build_adapters"
+
+[adapters.options]
+fixture = "examples/synthetic_cases.json"
+deck_dir = "out/decks"
